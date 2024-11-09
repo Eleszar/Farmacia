@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.menu {
+  height: 30px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  border-color: transparent;
+  border-radius: 50px;
+  color: white;
+  background-color: transparent;
+  cursor: context-menu;
+  transition: background-color 1s ease;
+}
+nav {
+  position: fixed;
+  z-index: 21;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  background-color: whitesmoke;
+  display: flex;
+  border: 1px solid gainsboro;
+  border-radius: 50px;
+  width: 450px;
+  height: 40px;
+  margin: 0 100px 0 200px;
+  
+}
+
+.search-container input {
+  /* display: flexbox; */
+  border: none;
+  outline: none;
+  background: none;
+  width: 95%;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.search-container button {
+  cursor: pointer;
+  border: whitesmoke;
+  background-color: whitesmoke;
+  align-items: flex-end;
+  border-radius: 50%;
+}
+
+.search-container img {
+  background-color: whitesmoke;
+  width: 25px;
+  height: 25px;
+}
+
+.heart-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.hoover {
+  background: linear-gradient(to right, #a6d15d, #177f40);
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: end; */
+  position: fixed;
+  /* background-color: white; */
+  top: 65px;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+
+#user-icon {
+  position: relative;
+  display: inline-block;
+}

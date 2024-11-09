@@ -1,0 +1,70 @@
+.img-saludo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.img-perfil {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+.saludo {
+  /* position: relative; */
+  display: block;
+  /* margin: 20px 0 0 0 ; */
+  /* padding: 50px; */
+  width: 30%;
+  height: 30px;
+  font-size: 30px;
+}
+
+.titulo-perfil {
+  display: inline;
+  width: 100%;
+  padding-left: 20%;
+  font-size: 25px;
+}
+
+.listas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  border: 1px solid violet;
+}
+.menu-perfil {
+  margin-right: 50px;
+  border: 1px solid black;
+  align-content: center;
+  justify-content: center;
+}
+
+.menu-perfil li {
+  /* border: 1px solid blue; */
+  align-content: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.titulo-perfil {
+  border: 1px solid blue;
+}
+
+.caja-info {
+  border: 1px solid blue;
+  margin: 10px 50px 10px 50px;
+  padding: 10px 400px 10px 20px;
+}
+
+.caja-info ol li {
+  /* border: 1px solid blue; */
+  font-size: 20px;
+}
+
+.faq2 {
+  display: block;
+  border: 1px solid blue;
+}

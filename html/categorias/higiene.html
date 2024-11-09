@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higiene</title>
+    <link rel="stylesheet" href="/Farmacia/css/header.css" />
+    <link rel="stylesheet" href="/Farmacia/css/categorias.css" />
+    <link rel="stylesheet" href="/Farmacia/css/menu-cat.css" />
+    <script src="/Farmacia/js/toggleCat.js"></script>
+
+    <!-- Añade tu archivo CSS aquí -->
+  </head>
+  <body>
+    <div class="header">
+      <a href="/Farmacia/html/index.html"><img
+        class="logo"
+        src="/Farmacia/assets/logo.jpg"
+        alt="logo farmacia medicamentos"
+      />
+      </a>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar" />
+        <button class="button" type="button">
+          <img src="https://i.ibb.co/sPVbFVd/search.png" alt="search" />
+        </button>
+      </div>
+
+      <div class="user-icon">
+        <button class="button" type="button">
+          <img src="https://i.ibb.co/7JcKzbs/user-v1.png" alt="user-v1" />
+        </button>
+      </div>
+
+      <div class="heart-icon">
+        <button class="button" type="button">
+          <img src="https://i.ibb.co/L8tj9dq/like-v1.png" alt="like-v1" />
+        </button>
+      </div>
+
+      <div class="shopping-cart-icon">
+        <button class="button" type="button">
+          <img
+            src="https://i.ibb.co/dL4g9rD/shopping-cart.png"
+            alt="shopping-cart"
+          />
+        </button>
+      </div>
+    </div>
+
+    <nav class="hoover">
+      <button id="opcCategorias" class="menu">Categorias</button>
+      <div id="menuCategorias" style="display: none" ;>
+        
+        <a href="/Farmacia/html/index.html" class="categoria">HOME</a>
+
+        <a href="/Farmacia/html/categorias/medicamentos.html" class="categoria"
+          >MEDICAMENTOS</a
+        >
+        <a
+          href="/Farmacia/html/categorias/dermocosmetica.html"
+          class="categoria"
+          >DERMOCOSMETICA</a
+        >
+        <a
+          href="/Farmacia/html/categorias/cuidaado-personal.html"
+          class="categoria"
+          >CUIDADO PERSONAL</a
+        >
+        <a href="/Farmacia/html/categorias/nutricion.html" class="categoria"
+          >NUTRICION</a
+        >
+        <a href="/Farmacia/html/categorias/maternidad.html" class="categoria"
+          >MATERNIDAD</a
+        >
+        <a href="/Farmacia/html/categorias/higiene.html" class="categoria"
+          >HIGIENE</a
+        >
+      </div>
+
+      <button id="opcSyb" class="menu">Salud y bienestar</button>
+      <button id="opcOfertas" class="menu">Ofertas</button>
+      <button id="opcByn" class="menu">Bebes y Niños</button>
+    </nav>
+    <!-- <div id="menuCategorias" style="display: none">
+      
+      <a href="/categorias/medicamentos" class="categoria">MEDICAMENTOS</a>
+      <a href="/categorias/dermocosmetica" class="categoria">DERMOCOSMETICA</a>
+      <a href="/categorias/cuidado-personal" class="categoria"
+        >CUIDADO PERSONAL</a
+      >
+      <a href="/categorias/nutricion" class="categoria">NUTRICION</a>
+      <a href="/categorias/maternidad" class="categoria">MATERNIDAD</a>
+      <a href="/categorias/higiene" class="categoria">HIGIENE</a>
+    </div> -->
+
+    <div class="titulos">ARTICULOS DE CUIDADO PERSONAL</div>
+
+    <div class="tarjetas">
+      <!-- Producto 1 -->
+      <div class="tarjeta">
+        <img
+          class="tarjeta-img"
+          src="https://i.ibb.co/4frGs4b/vitaminas.png"
+          alt="vitaminas"
+        />
+        <h4>Vitamina C</h4>
+        <p>Vitaminas tipo C</p>
+        <p class="precio-original">$20.000</p>
+        <p class="precio-descuento">$15.000</p>
+        <button class="agregar">AGREGAR</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="tarjeta">
+        <img
+          class="tarjeta-img"
+          src="https://i.ibb.co/4frGs4b/vitaminas.png"
+          alt="analgesico"
+        />
+        <h4>Ibuprofeno</h4>
+        <p>Analgesico de 200mg</p>
+        <p class="precio-original">$10.000</p>
+        <p class="precio-descuento">$8.000</p>
+        <button class="agregar">AGREGAR</button>
+      </div>
+
+      <!-- Añadir más productos aquí hasta completar los 10 -->
+    </div>
+    <div class="btnMmas">
+      <button class="mmas">MOSTRAR MAS</button>
+    </div>
+
+    <div class="titulos">
+      <span id="suscription-text"
+        >Suscribite y recibí promociones exclusivas</span
+      >
+      <input
+        id="suscription-input"
+        type="email"
+        placeholder="   Ingresa tu email"
+      />
+      <submit id="suscription-enviar">ENVIAR</submit>
+    </div>
+
+    <div class="faq">
+      <div class="faq-blocks">
+        <a href="">CATEGORIAS</a>
+        <ol>
+          <li>Medicamentos</li>
+          <li>Dermocosmetica</li>
+          <li>Cuidado personal</li>
+          <li>Nutricion</li>
+          <li>Maternidad</li>
+          <li>Higiene</li>
+        </ol>
+      </div>
+
+      <div class="faq-blocks">
+        <a href="">INFO</a>
+        <ol>
+          <li>Nosotros</li>
+          <li>Sumate a nuestro equipo</li>
+          <li>Obras sociales</li>
+          <li>Preguntas frecuentes</li>
+          <li>Terminos y condiciones</li>
+          <li>Sucursales</li>
+          <li>Revista</li>
+        </ol>
+      </div>
+
+      <div class="faq-blocks">
+        <a href="">ATENCION AL CLIENTE</a>
+        <ol>
+          <li>info@farmacia.com.ar</li>
+          <li>Tel.: +54 9988 9988</li>
+          <li>Chatear por whatsapp</li>
+        </ol>
+      </div>
+
+      <div class="faq-blocks">
+        <a href="">SEGUINOS</a>
+        <ol>
+          <li>Facebook</li>
+          <li>Instagram</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

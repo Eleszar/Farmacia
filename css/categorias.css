@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4em 0 0 0;
+}
+
+.button {
+  background-color: white;
+  border-style: hidden;
+}
+
+.img {
+  background-color: white;
+  filter: brightness(1.1) blur(1px);
+}
+
+.oferta-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.dinerera-container {
+  width: 100%;
+  margin: 50px 50px 0 50px;
+  /* position: relative; */
+
+  display: flex;
+  align-items: flex-start;
+  background-color: #177f40;
+  z-index: 10;
+}
+
+.dinerera-img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.text-containter {
+  display: flex;
+  flex-direction: column;
+}
+.mondays {
+  margin-top: 40px;
+  margin-bottom: -20px;
+  font-size: 24px;
+  font-style: italic;
+  color: #a6d15d;
+  /* position: relative; */
+}
+
+.discount {
+  /* margin: 50px 0 0 15px; */
+  font-size: 128px;
+  font-style: italic;
+  color: #a6d15d;
+  /* position: relative; */
+}
+
+.little-white {
+  display: flex;
+  margin-top: -20px;
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  position: relative;
+}
+
+.circulo-qr {
+  margin-top: 70px;
+  margin-left: 50px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+}
+
+.titulos {
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  /* display: flex; */
+  text-align: center;
+  background: linear-gradient(to right, #a6d15d, #177f40);
+  color: white;
+  font-size: 20px;
+}
+
+/* Descripción del producto */
+.descripcion {
+  font-size: 0.9em;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Precio original (antes del descuento) */
+.precio-original {
+  font-size: 1em;
+  text-decoration: line-through; /* Para mostrar el precio tachado */
+  color: #888;
+}
+
+/* Precio con descuento */
+.precio-descuento {
+  font-size: 1.2em;
+  color: #e60000;
+  font-weight: bold;
+  margin: 5px 0 0 5%;
+}
+
+/* Botón de agregar al carrito */
+.agregar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  margin-left: 65%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Cambia el color al hacer hover */
+}
+
+.tarjetas {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.tarjeta {
+  border: 2px solid grey;
+  margin: 10px;
+  background-color: white;
+  width: 22%;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: baseline;
+}
+
+.tarjeta-img {
+  display: flex;
+  width: 80%;
+  height: 40%;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0, 5px solid grey;
+}
+
+/* Estilo general para la tarjeta */
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center; /* Centrar todo el contenido dentro de la tarjeta */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del producto */
+.tarjeta h4 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.btnMmas {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.mmas {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: large;
+}
+
+.categorias-botones {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cat-bot {
+  margin: 20px 7%;
+  width: 15%;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+#suscription-text {
+  border-radius: 5px;
+}
+
+#suscription-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  border-style: hidden;
+  margin-left: 30px;
+}
+
+#suscription-enviar {
+  margin: 30px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #a6d15d;
+}
+
+.faq {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.faq-blocks {
+  margin: 10px 30px 0 50px;
+}
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
