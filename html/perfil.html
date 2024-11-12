@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="/Farmacia/css/reset.css"> -->
     <script src="/Farmacia/js/pagina1.js"></script>
     <script src="/Farmacia/js/toggleCat.js"></script>
+    <script src="/Farmacia/js/perfil.js"></script>
   </head>
   <body>
     <div class="header">
@@ -94,15 +95,30 @@
     <div class="titulo-perfil">Perfil</div>
   <div class="listas">
     <ol class="menu-perfil">
-      <li>Perfil</li>
-      <li>Direcciones</li>
-      <li>Pedidos</li>
-      <li>Tarjetas de credito</li>
-      <li>Autenticacion</li>
-      <li>Mis favoritos</li>
-      <li>Salir</li>
+      <li><button data-section="perfil">Perfil</button></li>
+      <li><button data-section="direcciones">Direcciones</button></li>
+      <li><button data-section="pedidos">Pedidos</button></li>
+      <li><button data-section="tarjetas">Tarjetas de crédito</button></li>
+      <li><button data-section="autenticacion">Autenticación</button></li>
+      <li><button data-section="favoritos">Mis favoritos</button></li>
+      <li><button id="salir-btn">Salir</button></li>
     </ol>
-
+    
+    <div class="caja-info" id="perfil"><ol>
+      <li>Nombre</li>
+      <li>Apellido</li>
+      <li>Email</li>
+      <li>DNI</li>
+      <li>Genero</li>
+      <li>Fecha de nacimiento</li>
+      <li>Telefono</li>
+    </ol></div>
+    <div class="caja-info" id="direcciones">Contenido de Direcciones</div>
+    <div class="caja-info" id="pedidos">Contenido de Pedidos</div>
+    <div class="caja-info" id="tarjetas">Contenido de Tarjetas de crédito</div>
+    <div class="caja-info" id="autenticacion">Contenido de Autenticación</div>
+    <div class="caja-info" id="favoritos">Contenido de Mis favoritos</div>
+    
     
     <div class="caja-info">
       <ol>

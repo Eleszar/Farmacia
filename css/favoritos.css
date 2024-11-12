@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.product-container,
+.favorites-container {
+  width: 45%;
+}
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para el corazón */
+}
+.tarjeta-img {
+  width: 80%;
+  height: auto;
+  margin: 20px;
+  border-radius: 5px;
+}
+.corazon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #e60000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.corazon:hover {
+  color: #ff4d4d;
+}
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+}
+.favorites-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.favorites-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.agregar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorites-container {
+  border: 1px solid black;
+}
+.favorites-container {
+    border: 1px solid black;
+    
+  }
