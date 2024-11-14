@@ -1,36 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Selecciona todos los cuadros y los botones en el menú
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona elementos necesarios
+  const salirButton = document.getElementById("salir-btn");
   const sections = document.querySelectorAll(".caja-info");
   const buttons = document.querySelectorAll(".menu-perfil button");
-  const salirButton = document.getElementById("salir-btn");
-  const likeButton = document.getElementById("like-button");
+  const tituloPerfil = document.querySelector(".titulo-perfil");
+  const perfilSection = document.getElementById("perfil"); // Selecciona la sección "Perfil"
+  
+  // // Oculta todas las secciones inicialmente
+  sections.forEach((section) => {
+    if (section.id !== "perfil") { 
+      section.style.display = "none";
+    } else {
+      section.style.display = "block";
+      tituloPerfil.textContent = "Perfil"; // Actualiza el título
+    }
+  });
 
-  // Oculta todos los cuadros inicialmente
-  sections.forEach((section) => (section.style.display = "none"));
+  
+ 
 
-  // Añade el evento de clic a cada botón
+  // Añade el evento de clic a cada botón en el menú para cambiar de sección
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Oculta todos los cuadros
+      // Oculta todas las secciones
       sections.forEach((section) => (section.style.display = "none"));
 
-      // Muestra el cuadro correspondiente al botón presionado
+      // Muestra la sección correspondiente al botón presionado
       const sectionId = button.getAttribute("data-section");
       const sectionToShow = document.getElementById(sectionId);
-      sectionToShow.style.display = "block";
+      if (sectionToShow) sectionToShow.style.display = "block";
+
+      // Cambia el contenido del título dinámicamente
+      tituloPerfil.textContent = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
     });
   });
 
-  // Redirige al hacer clic en el botón "Salir"
-  salirButton.addEventListener("click", function () {
-    window.location.href = "/Farmacia/html/index.html";
-  });
-
-  document.querySelector(".heart-icon .button").addEventListener("click", function () {
-    window.location.href = "/Farmacia/html/perfil.html?section=favoritos";
-  });
-
-  likeButton.addEventListener("click", function () {
-    window.location.href = "/Farmacia/html/perfil.html?section=favoritos";
-  });
+  // Añade evento de clic al botón "Salir" para redirigir a index.html
+  if (salirButton) {
+    salirButton.addEventListener("click", function () {
+      window.location.href = "/Farmacia/html/index.html";
+    });
+  }
 });

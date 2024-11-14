@@ -1,52 +1,45 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-let favorites = [];
-
-function addToFavorites(name, imgUrl, price) {
-    // Verificar si el producto ya está en favoritos
-    const exists = favorites.some(fav => fav.name === name);
-    if (exists) {
-        alert('El producto ya está en favoritos.');
-        return;
-    }
-
-    // Agregar producto a favoritos
-    favorites.push({ name, imgUrl, price });
-    renderFavorites();
-}
-
-function renderFavorites() {
-    const favoritesList = document.getElementById('favorites-list');
-    favoritesList.innerHTML = '';
-
-    favorites.forEach((product, index) => {
-        const li = document.createElement('li');
-
-        // Imagen del producto
-        const img = document.createElement('img');
-        img.src = product.imgUrl;
-        img.alt = product.name;
-
-        // Información del producto
-        const productInfo = document.createElement('div');
-        productInfo.innerHTML = `<strong>${product.name}</strong><br>${product.price}`;
-        
-        // Botón para eliminar de favoritos
-        const removeButton = document.createElement('button');
-        removeButton.textContent = 'Eliminar';
-        removeButton.onclick = () => removeFavorite(index);
-
-        li.appendChild(img);
-        li.appendChild(productInfo);
-        li.appendChild(removeButton);
-        favoritesList.appendChild(li);
+    // Selecciona elementos necesarios
+    const salirButton = document.getElementById("salir-btn");
+    const sections = document.querySelectorAll(".caja-info");
+    const buttons = document.querySelectorAll(".menu-perfil button");
+    const tituloPerfil = document.querySelector(".titulo-perfil");
+    const perfilSection = document.getElementById("perfil"); // Selecciona la sección "Perfil"
+    
+    // // Oculta todas las secciones inicialmente
+    sections.forEach((section) => {
+      if (section.id !== "favoritos") { 
+        section.style.display = "none";
+      } else {
+        section.style.display = "block";
+        tituloPerfil.textContent = "Favoritos"; // Actualiza el título
+      }
     });
-}
-
-function removeFavorite(index) {
-    favorites.splice(index, 1);
-    renderFavorites();
-}
-
-window.addToFavorites = addToFavorites;
-});
+  
+    
+   
+  
+    // Añade el evento de clic a cada botón en el menú para cambiar de sección
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Oculta todas las secciones
+        sections.forEach((section) => (section.style.display = "none"));
+  
+        // Muestra la sección correspondiente al botón presionado
+        const sectionId = button.getAttribute("data-section");
+        const sectionToShow = document.getElementById(sectionId);
+        if (sectionToShow) sectionToShow.style.display = "block";
+  
+        // Cambia el contenido del título dinámicamente
+        tituloPerfil.textContent = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
+      });
+    });
+  
+    // Añade evento de clic al botón "Salir" para redirigir a index.html
+    if (salirButton) {
+      salirButton.addEventListener("click", function () {
+        window.location.href = "/Farmacia/html/index.html";
+      });
+    }
+  });
+  
